@@ -39,6 +39,9 @@
 \usepackage{enumitem} % Required for list customisation
 \setlist{noitemsep} % No spacing between list items
 
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}} %Allows centering of tables
+
 %----------------------------------------------------------------------------------------
 %	DOCUMENT MARGINS
 %----------------------------------------------------------------------------------------
@@ -67,17 +70,6 @@
 \usepackage{fourier} % Use the Adobe Utopia font for the document
 
 %----------------------------------------------------------------------------------------
-%	SECTION TITLES
-%----------------------------------------------------------------------------------------
-
-\usepackage{sectsty} % Allows customising section commands
-
-\sectionfont{\vspace{6pt}\centering\normalfont\upshape} % \section{} styling
-\subsectionfont{\normalfont\bfseries} % \subsection{} styling
-\subsubsectionfont{\normalfont\itshape} % \subsubsection{} styling
-\paragraphfont{\normalfont\scshape} % \paragraph{} styling
-
-%----------------------------------------------------------------------------------------
 %	HEADERS AND FOOTERS
 %----------------------------------------------------------------------------------------
 
@@ -90,3 +82,7 @@
 \ofoot*{} % Right footer
 \ifoot*{} % Left footer
 \cfoot*{\pagemark} % Centre footer
+
+%----------------------------------------------------------------------------------------
+%	SECTION TITLES
+%----------------------------------------------------------------------------------------
